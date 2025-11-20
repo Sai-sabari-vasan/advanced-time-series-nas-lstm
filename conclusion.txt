@@ -1,0 +1,7 @@
+Conclusion:
+- ARIMA RMSE=13.9473, MAE=12.1561
+- Manual LSTM RMSE=2.5777, MAE=2.1041
+- NAS-optimized LSTM RMSE=2.6165, MAE=2.1436
+
+The NAS-optimized LSTM performs best on RMSE and MAE. NAS improved error vs Manual LSTM by approx -1.50% on RMSE.
+Reason: the NAS found a better combination of depth/width/dropout/learning rate that fits the synthetic series' non-linear patterns while regularizing noise.
